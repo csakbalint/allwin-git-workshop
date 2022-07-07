@@ -1,0 +1,14 @@
+{
+  "name": "allwin-git-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "csakbalint <csak.balint@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
