@@ -1,10 +1,18 @@
-import { double, sum, reverse, plot } from './my-super-methods';
+import { double, sum, reverse, plot, multiply } from './my-super-methods';
 
 describe('my-super-methods', () => {
   describe('double', () => {
     it('should calculate 2 + 2', () => expect(double(2)).toEqual(4));
 
     it('should calculate 5 + 5', () => expect(double(5)).toEqual(10));
+  });
+
+  describe('multiply', () => {
+    it('should work without parameters', () => expect(multiply()).toEqual(0));
+
+    it('should calculate 2 * 2', () => expect(multiply(2, 2)).toEqual(4));
+
+    it('should calculate 3 * 3 * 3 * 3', () => expect(multiply(3, 3, 3, 3)).toEqual(81));
   });
 
   describe('sum', () => {

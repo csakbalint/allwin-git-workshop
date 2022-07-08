@@ -2,6 +2,10 @@ export function double(x: number) {
   return x + x;
 }
 
+export function multiply(...args: number[]) {
+  return args.reduce((prev, curr) => prev * curr, 1);
+}
+
 export function sum(...args: number[]) {
   return args.reduce((prev, curr) => prev + curr, 0);
 }
