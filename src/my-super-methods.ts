@@ -3,7 +3,7 @@ export function double(x: number) {
 }
 
 export function multiply(...args: number[]) {
-  return args.length === 0 ? 0 : args.reduce((prev, curr) => prev * curr, 1);
+  return args.reduce((prev, curr) => prev * curr, 1);
 }
 
 export function sum(...args: number[]) {
