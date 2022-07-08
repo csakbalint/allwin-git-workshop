@@ -3,7 +3,7 @@ export function double(x: number) {
 }
 
 export function triple(x: number) {
-  return x + x + x;
+  return x + x;
 }
 
 export function multiply(...args: number[]) {
