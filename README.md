@@ -51,6 +51,7 @@ It is recommended to use several tools:
 - Visual Studio Code
 - Git Graph VSCode extension
 - installed git command 😅
+- installed Node version of at least 16 because of Husky
 
 ## Git commands
 
