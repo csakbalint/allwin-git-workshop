@@ -5,11 +5,14 @@
   "author": "csakbalint <csak.balint@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "start": "ts-node src/index.ts",
     "lint": "eslint .",
     "test": "jest --detectOpenHandles"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/eslint": "^8.4.5",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.3",
@@ -18,10 +21,20 @@
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
     "jest": "^28.1.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.2",
     "typescript": "^4.7.4"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
