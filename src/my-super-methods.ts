@@ -5,6 +5,7 @@ export function double(x: number) {
 // change
 // another change
 // another change
+// another change
 export function multiply(...args: number[]) {
   return args.reduce((prev, curr) => prev * curr, 1);
 }
